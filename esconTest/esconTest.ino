@@ -55,7 +55,7 @@ void loop()
     // if we get a valid byte, read analog ins:
     // get incoming byte:
     digitalWrite(7, LOW);
-    digitalWrite(8, LOW);      
+    digitalWrite(8, HIGH);      
     analogWrite(pwmPin, 100); // approx 490 Hz
   
     //Serial.print(inByte);

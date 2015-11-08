@@ -61,13 +61,13 @@ void loop()
     //if (inByte=='a')
     Serial.write(inByte);
     //Serial.print(inByte);
-    if (inByte <= 128)
+    if (inByte <= 128) // CW
     {
-      digitalWrite(7, HIGH);
-      digitalWrite(8, LOW);      
+      digitalWrite(7, HIGH); 
+      digitalWrite(8, HIGH); // ENABLE      
       pwmValue = inByte;
     }
-    else
+    else  // CCW
     {
       digitalWrite(7, LOW);
       digitalWrite(8, HIGH);      
